@@ -1,7 +1,7 @@
-FROM node:13-alpine
+FROM node:16.15.1-alpine3.15
 
-ENV MONGO_DB_USERNAME=admin \
-    MONGO_DB_PWD=password
+ENV MONGO_DB_USERNAME=mongoadmin \
+    MONGO_DB_PWD=secret
 
 RUN mkdir -p /home/app
 
